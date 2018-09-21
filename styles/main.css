@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#main-jumbo {
+    background-image: url('https://images.unsplash.com/photo-1498724546413-791544cf00d3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b8800863c0bfe930779bf41987aba6b4&auto=format&fit=crop&w=2720&q=80');
+    overflow: hidden;
+    background-size: cover;
+    color: white;
+}
+
+p {
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    font-weight: 400;
+    font-style: normal;
+    /* font-size: 1em; */
+}
+
+#cube {
+    -webkit-animation-name: ckw;
+    animation-name: ckw;
+    -webkit-animation-duration: 25s;
+    animation-duration: 25s;
+    /* Things added */
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    display: inline-block;
+    /* <--- */
+}
+
+@-webkit-keyframes ckw {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes ckw {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
